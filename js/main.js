@@ -1,9 +1,4 @@
-// Минимальный JavaScript только для управления DOM-элементами
-// Без хардкода сообщений - только открытие/закрытие меню
-
-// ========== УПРАВЛЕНИЕ ДРОПДАУНАМИ ==========
 (function() {
-    // Закрыть все дропдауны
     function closeAllDropdowns() {
         document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
             menu.classList.remove('active');
@@ -18,8 +13,6 @@
             dropdown.classList.add('active');
         }
     }
-
-    // Обработчики для иконок с data-dropdown атрибутом
     var iconWrappers = document.querySelectorAll('.icon-wrapper');
     iconWrappers.forEach(function(wrapper) {
         var dropdownId = wrapper.getAttribute('data-dropdown');
@@ -35,8 +28,6 @@
             });
         }
     });
-
-    // Закрытие при клике вне дропдаунов
     document.addEventListener('click', function(event) {
         var isClickInside = event.target.closest('.icon-wrapper') || event.target.closest('.dropdown-menu');
         if (!isClickInside) {
@@ -44,7 +35,6 @@
         }
     });
 
-    // Предотвращаем закрытие при клике внутри меню
     document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
         menu.addEventListener('click', function(event) {
             event.stopPropagation();
@@ -52,30 +42,19 @@
     });
 })();
 
-// ========== ОБРАБОТКА ФОРМЫ ПОИСКА ==========
 var searchForm = document.getElementById('searchForm');
 if (searchForm) {
     searchForm.addEventListener('submit', function(e) {
-        // Форма отправится на search.html как обычно
-        // Никаких alert-ов, просто стандартное поведение
         return true;
     });
 }
-
-// ========== ДОПОЛНИТЕЛЬНЫЙ ИНТЕРАКТИВ ДЛЯ КАРТОЧЕК И ПАРТНЕРОВ ==========
-// Эти обработчики можно убрать, если не нужны, но они не нарушают минимальность JS
-// Они просто перенаправляют или показывают контекстные меню (по желанию)
-
-// Карточка статуса рейсов
 var statusCard = document.querySelector('[data-card="status"]');
 if (statusCard) {
     statusCard.addEventListener('click', function() {
-        // Можно добавить переход на страницу статуса рейсов
         console.log('Статус рейсов');
     });
 }
 
-// Карточка техподдержки
 var supportCard = document.querySelector('[data-card="support"]');
 if (supportCard) {
     supportCard.addEventListener('click', function() {
@@ -83,7 +62,6 @@ if (supportCard) {
     });
 }
 
-// Партнеры
 var partnerItems = document.querySelectorAll('[data-partner]');
 partnerItems.forEach(function(item) {
     item.addEventListener('click', function() {
@@ -92,7 +70,6 @@ partnerItems.forEach(function(item) {
     });
 });
 
-// Кнопка "Подробнее" в секции отелей
 var holidayBtn = document.querySelector('[data-holiday="more"]');
 if (holidayBtn) {
     holidayBtn.addEventListener('click', function() {
@@ -100,7 +77,6 @@ if (holidayBtn) {
     });
 }
 
-// Глобус
 var globeIcon = document.getElementById('globeIcon');
 if (globeIcon) {
     globeIcon.addEventListener('click', function() {
