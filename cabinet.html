@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Just Air - Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-area">
+            <a href="main.html" class="logo-link">
+                <img src="images/main-logo.png" class="logo-image">
+                <span class="logo-text">Just Air</span>
+            </a>
+        </div>
+        <div class="nav-icons">
+            <div class="icon-wrapper" data-dropdown="searchDropdown">
+                <i class="fas fa-search"></i>
+                <div class="dropdown-menu" id="searchDropdown">
+                    <div class="dropdown-header">Быстрый поиск</div>
+                    <a href="search.html" class="dropdown-item">
+                        <i class="fas fa-ticket-alt"></i> <span>Поиск авиабилетов</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-hotel"></i> <span>Поиск жилья</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="flight-status.html" class="dropdown-item">
+                        <i class="fas fa-radar"></i> <span>Статус рейса</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="icon-wrapper" data-dropdown="userDropdown" id="userMenuWrapper">
+                <i class="far fa-user-circle"></i>
+                <div class="dropdown-menu" id="userDropdown">
+                    <div id="unauthMenu" style="display: none;">
+                        <div class="dropdown-header">Аккаунт</div>
+                        <a href="login.html" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i> <span>Войти</span>
+                        </a>
+                        <a href="register.html" class="dropdown-item">
+                            <i class="fas fa-user-plus"></i> <span>Регистрация</span>
+                        </a>
+                    </div>
+                    <div id="authMenu">
+                        <div class="dropdown-header" id="welcomeUser">Добро пожаловать</div>
+                        <a href="cabinet.html" class="dropdown-item">
+                            <i class="fas fa-id-card"></i> <span>Личный кабинет</span>
+                        </a>
+                        <a href="cabinet-bookings.html" class="dropdown-item">
+                            <i class="fas fa-ticket-alt"></i> <span>Мои бронирования</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i> <span>Выйти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-wrapper" data-dropdown="burgerDropdown">
+                <i class="fas fa-bars"></i>
+                <div class="dropdown-menu" id="burgerDropdown">
+                    <div class="dropdown-header">О проекте</div>
+                    <a href="achievements.html" class="dropdown-item">
+                        <i class="fas fa-info-circle"></i> <span>О компании Just Air</span>
+                    </a>
+                    <a href="support.html" class="dropdown-item">
+                        <i class="fas fa-life-ring"></i> <span>Центр поддержки</span>
+                    </a>
+                    <a href="news.html" class="dropdown-item">
+                        <i class="fas fa-newspaper"></i> <span>Новости и акции</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-phone-alt"></i> <span>Контакты</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-globe"></i> <span>Русский / ENG</span>
+                    </a>
+                </div>
+            </div>
+
+            <i class="fas fa-globe" id="globeIcon"></i>
+        </div>
+    </div>
+
+    <div class="cabinet-container">
+        <div class="cabinet-sidebar">
+            <div class="user-avatar">
+                <i class="fas fa-user-circle"></i>
+                <h3 id="userNameDisplay">Алексей Иванов</h3>
+                <p id="userEmailDisplay">alexey@example.com</p>
+            </div>
+            <nav class="cabinet-nav">
+                <a href="cabinet.html" class="nav-link active">
+                    <i class="fas fa-id-card"></i> Личные данные
+                </a>
+                <a href="cabinet-bookings.html" class="nav-link">
+                    <i class="fas fa-ticket-alt"></i> Мои бронирования
+                </a>
+                <a href="cabinet-settings.html" class="nav-link">
+                    <i class="fas fa-cog"></i> Настройки
+                </a>
+            </nav>
+            <a href="main.html" class="logout-btn" id="cabinetLogoutBtn">
+                <i class="fas fa-sign-out-alt"></i> Выйти
+            </a>
+        </div>
+        
+        <div class="cabinet-content">
+            <h2><i class="fas fa-id-card"></i> Личные данные</h2>
+            <div class="profile-info">
+                <div class="info-row">
+                    <span class="info-label">Имя:</span>
+                    <span class="info-value" id="profileFirstName">Алексей</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Фамилия:</span>
+                    <span class="info-value" id="profileLastName">Иванов</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value" id="profileEmail">alexey@example.com</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Телефон:</span>
+                    <span class="info-value" id="profilePhone">+375 29 123 45 67</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Дата регистрации:</span>
+                    <span class="info-value" id="profileRegDate">15 марта 2025</span>
+                </div>
+            </div>
+            <button class="edit-btn" disabled>
+                <i class="fas fa-edit"></i> Редактировать профиль
+            </button>
+            <p class="info-note">* Функция редактирования будет доступна в следующей версии</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-icon-row"><i class="fas fa-phone-alt"></i><span>+375 29 123-45-67</span></div>
+                <div class="footer-icon-row"><i class="far fa-envelope"></i><span>support@justair.aero</span></div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-icon-row"><i class="fas fa-map-pin"></i><span>г. Минск, ул. Авиационная, 12</span></div>
+                <div class="footer-icon-row"><i class="fas fa-clock"></i><span>Ежедневно 09:00 - 21:00</span></div>
+            </div>
+            <div class="footer-col">
+                <div class="social-icons">
+                    <!-- Facebook -->
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    
+                    <!-- Twitter -->
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                    </svg>
+                    
+                    <!-- Instagram -->
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                    
+                    <!-- LinkedIn -->
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </div>
+                <div class="social-label">соц. сети</div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-icon-row" style="justify-content: center;">
+            <i class="fas fa-plane"></i>
+            <i class="fas fa-globe-asia"></i>
+        </div>
+    </footer>
+
+    <script src="js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Just Air - О компании</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-area">
+            <a href="main.html" class="logo-link">
+                <img src="images/main-logo.png" class="logo-image" alt="Just Air">
+                <span class="logo-text">Just Air</span>
+            </a>
+        </div>
+        <div class="nav-icons">
+            <div class="icon-wrapper" data-dropdown="searchDropdown">
+                <i class="fas fa-search"></i>
+                <div class="dropdown-menu" id="searchDropdown">
+                    <div class="dropdown-header">Быстрый поиск</div>
+                    <a href="search.html" class="dropdown-item">
+                        <i class="fas fa-ticket-alt"></i> <span>Поиск авиабилетов</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-hotel"></i> <span>Поиск жилья</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="flight-status.html" class="dropdown-item">
+                        <i class="fas fa-radar"></i> <span>Статус рейса</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="icon-wrapper" data-dropdown="userDropdown" id="userMenuWrapper">
+                <i class="far fa-user-circle"></i>
+                <div class="dropdown-menu" id="userDropdown">
+                    <div id="unauthMenu">
+                        <div class="dropdown-header">Аккаунт</div>
+                        <a href="login.html" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i> <span>Войти</span>
+                        </a>
+                        <a href="register.html" class="dropdown-item">
+                            <i class="fas fa-user-plus"></i> <span>Регистрация</span>
+                        </a>
+                    </div>
+                    <div id="authMenu" style="display: none;">
+                        <div class="dropdown-header" id="welcomeUser">Добро пожаловать</div>
+                        <a href="cabinet.html" class="dropdown-item">
+                            <i class="fas fa-id-card"></i> <span>Личный кабинет</span>
+                        </a>
+                        <a href="#" class="dropdown-item" id="myBookingsLink">
+                            <i class="fas fa-ticket-alt"></i> <span>Мои бронирования</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i> <span>Выйти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="icon-wrapper" data-dropdown="burgerDropdown">
+                <i class="fas fa-bars"></i>
+                <div class="dropdown-menu" id="burgerDropdown">
+                    <div class="dropdown-header">О проекте</div>
+                    <a href="about.html" class="dropdown-item">
+                        <i class="fas fa-info-circle"></i> <span>О компании Just Air</span>
+                    </a>
+                    <a href="support.html" class="dropdown-item">
+                        <i class="fas fa-life-ring"></i> <span>Центр поддержки</span>
+                    </a>
+                    <a href="news.html" class="dropdown-item">
+                        <i class="fas fa-newspaper"></i> <span>Новости и акции</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="contacts.html" class="dropdown-item">
+                        <i class="fas fa-phone-alt"></i> <span>Контакты</span>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-globe"></i> <span>Русский / ENG</span>
+                    </a>
+                </div>
+            </div>
+
+            <i class="fas fa-globe" id="globeIcon"></i>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <i class="fas fa-info-circle hero-icon"></i>
+            <h1>О компании Just Air</h1>
+            <p>Ваш надежный партнер в мире авиаперелетов</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="about-text">
+                <h2><i class="fas fa-history"></i> Наша история</h2>
+                <p>Авиакомпания Just Air была основана в 2020 году с целью предоставить пассажирам качественные и доступные авиаперелеты по Беларуси и за ее пределы. За пять лет работы мы перевезли более 500 000 довольных пассажиров и продолжаем расти.</p>
+                <p>Начав с нескольких внутренних рейсов, сегодня Just Air выполняет полеты по 12 направлениям, включая международные рейсы в Москву и Варшаву. Мы постоянно расширяем географию полетов и улучшаем сервис.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/1164572/pexels-photo-1164572.jpeg?auto=compress&cs=tinysrgb&w=600" alt="История компании">
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <div class="mission-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Наша миссия</h3>
+                <p>Сделать авиаперелеты доступными, комфортными и безопасными для каждого пассажира, обеспечивая высочайший уровень сервиса.</p>
+            </div>
+            <div class="mission-card">
+                <i class="fas fa-eye"></i>
+                <h3>Наше видение</h3>
+                <p>Стать ведущей авиакомпанией Беларуси, предлагающей лучшее соотношение цены и качества на рынке авиаперевозок.</p>
+            </div>
+            <div class="mission-card">
+                <i class="fas fa-heart"></i>
+                <h3>Наши ценности</h3>
+                <p>Безопасность, пунктуальность, клиентоориентированность и постоянное развитие — главные приоритеты нашей работы.</p>
+            </div>
+        </div>
+
+        <div class="advantages-section">
+            <h2><i class="fas fa-star"></i> Почему выбирают Just Air</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Безопасность</h4>
+                    <p>Современный парк воздушных судов и строгий контроль качества</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-clock"></i>
+                    <h4>Пунктуальность</h4>
+                    <p>96% рейсов выполняются строго по расписанию</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-smile"></i>
+                    <h4>Комфорт</h4>
+                    <p>Удобные кресла, питание на борту и внимательный персонал</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-tag"></i>
+                    <h4>Доступные цены</h4>
+                    <p>Лучшее соотношение цены и качества на рынке</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">лет на рынке</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">500K+</span>
+                <span class="stat-label">пассажиров</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">направлений</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">96%</span>
+                <span class="stat-label">пунктуальность</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-icon-row"><i class="fas fa-phone-alt"></i><span>+375 29 123 45 67</span></div>
+                <div class="footer-icon-row"><i class="far fa-envelope"></i><span>support@justair.aero</span></div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-icon-row"><i class="fas fa-map-pin"></i><span>г. Минск, ул. Авиационная, 12</span></div>
+                <div class="footer-icon-row"><i class="fas fa-clock"></i><span>Ежедневно 09:00 - 21:00</span></div>
+            </div>
+            <div class="footer-col">
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="social-label">соц. сети</div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-icon-row" style="justify-content: center;">
+            <i class="fas fa-plane"></i>
+            <i class="fas fa-globe-asia"></i>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
