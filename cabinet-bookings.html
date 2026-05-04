@@ -66,7 +66,7 @@
                 <i class="fas fa-bars"></i>
                 <div class="dropdown-menu" id="burgerDropdown">
                     <div class="dropdown-header">О проекте</div>
-                    <a href="achievements.html" class="dropdown-item">
+                    <a href="about.html" class="dropdown-item">
                         <i class="fas fa-info-circle"></i> <span>О компании Just Air</span>
                     </a>
                     <a href="support.html" class="dropdown-item">
@@ -89,131 +89,172 @@
         </div>
     </div>
 
-    <div class="cabinet-container">
-        <div class="cabinet-sidebar">
-            <div class="user-avatar">
-                <i class="fas fa-user-circle"></i>
-                <h3 id="userNameDisplay">Алексей Иванов</h3>
-                <p id="userEmailDisplay">alexey@example.com</p>
-            </div>
-            <nav class="cabinet-nav">
-                <a href="cabinet.html" class="nav-link">
-                    <i class="fas fa-id-card"></i> Личные данные
-                </a>
-                <a href="cabinet-bookings.html" class="nav-link active">
-                    <i class="fas fa-ticket-alt"></i> Мои бронирования
-                </a>
-                <a href="cabinet-settings.html" class="nav-link">
-                    <i class="fas fa-cog"></i> Настройки
-                </a>
-            </nav>
-            <a href="main.html" class="logout-btn">
-                <i class="fas fa-sign-out-alt"></i> Выйти
-            </a>
-        </div>
-        
-        <div class="cabinet-content">
-            <h2><i class="fas fa-ticket-alt"></i> Мои бронирования</h2>
-            
-            <div class="bookings-list">
-                <div class="booking-card">
-                    <div class="booking-header">
-                        <span class="booking-number">Билет № JT-2025-001</span>
-                        <span class="booking-status confirmed">Подтвержден</span>
+    <div class="cabinet-wrapper">
+        <div class="cabinet-main">
+            <div class="cabinet-sidebar-new">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="profile-status online"></div>
                     </div>
-                    <div class="booking-details">
-                        <div class="booking-route">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Минск (MSQ)</span>
-                            <i class="fas fa-arrow-right"></i>
-                            <span>Брест (BQT)</span>
+                    <h3>Алексей Иванов</h3>
+                    <p>alexey@example.com</p>
+                    <div class="profile-divider"></div>
+                    <div class="profile-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+375 29 123 45 67</span>
                         </div>
-                        <div class="booking-date">
-                            <i class="far fa-calendar-alt"></i>
-                            <span>15 мая 2025</span>
-                        </div>
-                        <div class="booking-time">
-                            <i class="far fa-clock"></i>
-                            <span>08:00 → 08:45</span>
-                        </div>
-                        <div class="booking-passengers">
-                            <i class="fas fa-user-friends"></i>
-                            <span>1 пассажир</span>
-                        </div>
-                        <div class="booking-price">
-                            <i class="fas fa-ruble-sign"></i>
-                            <span>89 BYN</span>
+                        <div class="contact-item">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Минск, Беларусь</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="booking-card">
-                    <div class="booking-header">
-                        <span class="booking-number">Билет № JT-2025-002</span>
-                        <span class="booking-status completed">Завершен</span>
+                <nav class="cabinet-nav-new">
+                    <a href="cabinet.html" class="nav-item">
+                        <i class="fas fa-id-card"></i>
+                        <span>Личные данные</span>
+                    </a>
+                    <a href="cabinet-bookings.html" class="nav-item active">
+                        <i class="fas fa-ticket-alt"></i>
+                        <span>Мои бронирования</span>
+                        <span class="nav-badge">3</span>
+                    </a>
+                    <a href="cabinet-settings.html" class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Настройки</span>
+                    </a>
+                </nav>
+
+                <a href="main.html" class="logout-btn-new">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Выйти из аккаунта</span>
+                </a>
+            </div>
+
+            <div class="cabinet-content-new">
+                <div class="page-title">
+                    <h2><i class="fas fa-ticket-alt"></i> Мои бронирования</h2>
+                    <p>История ваших перелетов и текущие бронирования</p>
+                </div>
+
+                <div class="bookings-list-new">
+                    <div class="booking-card-new">
+                        <div class="booking-header-new">
+                            <div class="booking-number-new">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Рейс 1</span>
+                            </div>
+                            <span class="booking-status-new confirmed">Подтвержден</span>
+                        </div>
+                        <div class="booking-route-new">
+                            <div class="route-point">
+                                <div class="city">Минск</div>
+                                <div class="time">08:00</div>
+                            </div>
+                            <div class="route-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="route-point">
+                                <div class="city">Брест</div>
+                                <div class="time">08:45</div>
+                            </div>
+                        </div>
+                        <div class="booking-info-row">
+                            <div class="info-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>15 мая 2025</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>1 пассажир</span>
+                            </div>
+                            <div class="info-item price">
+                                <span>89 BYN</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="booking-details">
-                        <div class="booking-route">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Минск (MSQ)</span>
-                            <i class="fas fa-arrow-right"></i>
-                            <span>Гродно (GNA)</span>
+
+                    <div class="booking-card-new">
+                        <div class="booking-header-new">
+                            <div class="booking-number-new">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Рейс 2</span>
+                            </div>
+                            <span class="booking-status-new completed">Завершен</span>
                         </div>
-                        <div class="booking-date">
-                            <i class="far fa-calendar-alt"></i>
-                            <span>10 апреля 2025</span>
+                        <div class="booking-route-new">
+                            <div class="route-point">
+                                <div class="city">Минск</div>
+                                <div class="time">09:15</div>
+                            </div>
+                            <div class="route-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="route-point">
+                                <div class="city">Гродно</div>
+                                <div class="time">10:10</div>
+                            </div>
                         </div>
-                        <div class="booking-time">
-                            <i class="far fa-clock"></i>
-                            <span>09:15 → 10:10</span>
+                        <div class="booking-info-row">
+                            <div class="info-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>10 апреля 2025</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2 пассажира</span>
+                            </div>
+                            <div class="info-item price">
+                                <span>184 BYN</span>
+                            </div>
                         </div>
-                        <div class="booking-passengers">
-                            <i class="fas fa-user-friends"></i>
-                            <span>2 пассажира</span>
+                    </div>
+
+                    <div class="booking-card-new">
+                        <div class="booking-header-new">
+                            <div class="booking-number-new">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>Рейс 3</span>
+                            </div>
+                            <span class="booking-status-new cancelled">Отменен</span>
                         </div>
-                        <div class="booking-price">
-                            <i class="fas fa-ruble-sign"></i>
-                            <span>184 BYN</span>
+                        <div class="booking-route-new">
+                            <div class="route-point">
+                                <div class="city">Минск</div>
+                                <div class="time">16:00</div>
+                            </div>
+                            <div class="route-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="route-point">
+                                <div class="city">Москва</div>
+                                <div class="time">17:45</div>
+                            </div>
+                        </div>
+                        <div class="booking-info-row">
+                            <div class="info-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>25 марта 2025</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span>1 пассажир</span>
+                            </div>
+                            <div class="info-item price">
+                                <span>145 BYN</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="booking-card">
-                    <div class="booking-header">
-                        <span class="booking-number">Билет № JT-2025-003</span>
-                        <span class="booking-status cancelled">Отменен</span>
-                    </div>
-                    <div class="booking-details">
-                        <div class="booking-route">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Минск (MSQ)</span>
-                            <i class="fas fa-arrow-right"></i>
-                            <span>Москва (DME)</span>
-                        </div>
-                        <div class="booking-date">
-                            <i class="far fa-calendar-alt"></i>
-                            <span>25 марта 2025</span>
-                        </div>
-                        <div class="booking-time">
-                            <i class="far fa-clock"></i>
-                            <span>16:00 → 17:45</span>
-                        </div>
-                        <div class="booking-passengers">
-                            <i class="fas fa-user-friends"></i>
-                            <span>1 пассажир</span>
-                        </div>
-                        <div class="booking-price">
-                            <i class="fas fa-ruble-sign"></i>
-                            <span>145 BYN</span>
-                        </div>
-                    </div>
+                <div class="bookings-footer-new">
+                    <a href="search.html" class="btn-primary">
+                        <i class="fas fa-plus"></i> Найти новый билет
+                    </a>
                 </div>
-            </div>
-            
-            <div class="bookings-footer">
-                <a href="search.html" class="search-flights-btn">
-                    <i class="fas fa-plus"></i> Найти новый билет
-                </a>
             </div>
         </div>
     </div>
@@ -230,21 +271,18 @@
             </div>
             <div class="footer-col">
                 <div class="social-icons">
-                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                     </svg>
-                    
-                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
                     </svg>
-                    
-                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                     </svg>
-                    
-                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                         <rect x="2" y="9" width="4" height="12"/>
                         <circle cx="4" cy="4" r="2"/>

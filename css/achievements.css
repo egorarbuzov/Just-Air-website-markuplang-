@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
   background: white;
   flex-wrap: wrap;
   position: relative;
@@ -241,7 +241,7 @@ body {
 .footer {
   background: #f8fafd;
   padding: 3rem 2rem 2rem;
-  border-top: 1px solid #eef2f6;
+  border-top: 1px solid #e2e8f0;
   margin-top: 2rem;
 }
 

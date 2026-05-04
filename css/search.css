@@ -16,7 +16,7 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background: white;
-  border-bottom: 1px solid #eef2f6;
+  border-bottom: 1px solid #e2e8f0;
   flex-wrap: wrap;
   position: relative;
   z-index: 100;
@@ -174,7 +174,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  border: 1px solid #eef2f6;
+  border: 1px solid #e2e8f0;
 }
 
 .search-params {
@@ -223,8 +223,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border: 1px solid #eef2f6;
-  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
 }
 .flight-card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -322,7 +322,7 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 0.85rem;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .select-btn:hover {
   background: #631f20;
@@ -332,7 +332,7 @@ body {
 .footer {
   background: #f8fafd;
   padding: 3rem 2rem 2rem;
-  border-top: 1px solid #eef2f6;
+  border-top: 1px solid #e2e8f0;
   margin-top: 2rem;
 }
 
@@ -375,7 +375,7 @@ body {
   font-size: 1.4rem;
   color: #4a5568;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .social-icons i:hover {
   color: #8a2c2d;

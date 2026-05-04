@@ -1,14 +1,4 @@
-// ========== ПЕРЕМЕННЫЕ ==========
-$primary: #8a2c2d;
-$primary-dark: #631f20;
-$text-muted: #4a5568;
-$text-dark: #1a1e2b;
-$border: #e2e8f0;
-$border-light: #eef2f6;
-$bg-light: #f8fafd;
-$dropdown-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.02);
-$transition: all 0.3s ease;
-$transition-fast: all 0.2s ease;
+@use 'variables' as *;
 
 // ========== БАЗОВЫЕ СТИЛИ ==========
 * {

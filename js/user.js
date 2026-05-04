@@ -1,4 +1,3 @@
-// ========== УПРАВЛЕНИЕ ДРОПДАУНАМИ ==========
 (function() {
     function closeAllDropdowns() {
         document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
@@ -44,12 +43,10 @@
     });
 })();
 
-// ========== ГЛОБУС ==========
 document.getElementById('globeIcon')?.addEventListener('click', function() {
     alert('🌍 Выбор языка: Русский / English');
 });
 
-// ========== ВЫХОД ИЗ АККАУНТА ==========
 document.getElementById('logoutBtn')?.addEventListener('click', function(e) {
     e.preventDefault();
     localStorage.removeItem('isLoggedIn');
