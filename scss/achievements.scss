@@ -64,12 +64,22 @@ body {
     cursor: pointer;
     
     i {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #2c2e3a;
         transition: $transition-fast;
         
         &:hover {
             color: $primary;
+        }
+                > i {
+            font-size: 1.2rem;
+            color: #2c2e3a;
+            cursor: pointer;
+            transition: $transition-fast;
+
+            &:hover {
+                color: $primary;
+            }
         }
     }
 }

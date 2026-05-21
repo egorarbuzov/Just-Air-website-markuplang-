@@ -75,13 +75,14 @@ $dropdown-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.02)
     cursor: pointer;
     
     i {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #2c2e3a;
         transition: color 0.2s;
-        
+
         &:hover {
             color: $primary;
         }
+        
     }
 }
 

@@ -55,7 +55,7 @@ body {
   cursor: pointer;
 }
 .top-bar .nav-icons .icon-wrapper i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #2c2e3a;
   transition: all 0.2s ease;
 }
@@ -63,7 +63,7 @@ body {
   color: #8a2c2d;
 }
 .top-bar .nav-icons > i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #2c2e3a;
   cursor: pointer;
   transition: all 0.2s ease;

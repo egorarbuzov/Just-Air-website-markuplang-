@@ -61,7 +61,7 @@ body {
   cursor: pointer;
 }
 .icon-wrapper i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #2c2e3a;
   transition: all 0.2s ease;
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(138, 44, 45, 0.85), rgba(99, 31, 32, 0.9)), url("https://images.pexels.com/photos/1164572/pexels-photo-1164572.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover;
+  background: linear-gradient(rgba(138, 44, 45, 0.85), rgba(99, 31, 32, 0.9));
   padding: 4rem 2rem;
   text-align: center;
   color: white;

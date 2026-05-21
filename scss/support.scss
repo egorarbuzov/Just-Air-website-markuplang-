@@ -57,7 +57,7 @@ body {
     cursor: pointer;
     
     i {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #2c2e3a;
         transition: color 0.2s;
         
@@ -142,7 +142,6 @@ body {
     .hero-icon {
         font-size: 4rem;
         margin-bottom: 1rem;
-        animation: float 3s ease-in-out infinite;
     }
     
     h1 {
@@ -257,8 +256,8 @@ body {
 }
 
 .faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
@@ -268,6 +267,7 @@ body {
     border: 1px solid $border;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
     
     .faq-question {
         display: flex;

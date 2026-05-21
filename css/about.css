@@ -53,11 +53,20 @@ body {
   cursor: pointer;
 }
 .icon-wrapper i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #2c2e3a;
   transition: color 0.2s;
 }
 .icon-wrapper i:hover {
+  color: #8a2c2d;
+}
+.icon-wrapper i > i {
+  font-size: 1.2rem;
+  color: #2c2e3a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.icon-wrapper i > i:hover {
   color: #8a2c2d;
 }
 
