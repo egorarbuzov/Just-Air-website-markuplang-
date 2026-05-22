@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookings>
+    <booking id="JT-2025-001" status="confirmed" date="2025-05-15">
+        <from>Минск</from>
+        <to>Брест</to>
+        <departure>08:00</departure>
+        <arrival>08:45</arrival>
+        <duration>45 мин</duration>
+        <price>89</price>
+        <passenger>
+            <firstName>Егор</firstName>
+            <lastName>Арбузов</lastName>
+        </passenger>
+        <bookingDate>03.05.2026 10:30</bookingDate>
+    </booking>
+    <booking id="JT-2025-002" status="confirmed" date="2025-05-20">
+        <from>Минск</from>
+        <to>Гродно</to>
+        <departure>09:15</departure>
+        <arrival>10:10</arrival>
+        <duration>55 мин</duration>
+        <price>92</price>
+        <passenger>
+            <firstName>Егор</firstName>
+            <lastName>Арбузов</lastName>
+        </passenger>
+        <bookingDate>05.05.2026 14:20</bookingDate>
+    </booking>
+</bookings>
